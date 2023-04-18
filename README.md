@@ -16,7 +16,7 @@ Liste des fichiers
 ├── roles/                  <-- Dossier contenant tout les rôles
 │   └── nginx/              <-- Exemples de rôle appelé nginx (ex: ce rôle pourrait installer un serveur nginx)
 │       ├── defaults/       
-│       │   └── main.yml    <-- Fichier contenant les variables par défauts du rôle
+│       │   └── main.yml    <-- Fichier contenant les variables par défauts du rôle, ces variables peuvent être modifié 
 │       ├── files/          <-- Dossier contenant des fichiers qui ne seront pas modifiés (ex: avec le module copy)
 │       ├── handlers/        
 │       │   └── main.yml    <-- Fichier qui contient les tâches pouvant être appelé (ex: dans notre exemple une tâche de restart du service nginx)
@@ -27,5 +27,5 @@ Liste des fichiers
 │       ├── templates/      <-- Dossier contenant des templates qui seront modifiés (template jinja2 avec extension .j2, ex: dans notre exemple la page index)
 │       ├── tests/          <-- Dossier contenant un inventaire et un playbook afin d'avoir un environnement de tests pour le rôle
 │       └── vars/           <-- Variables associées au rôle
-└── web_servers.yml         <-- Il faut mieux créer un playbook par groupe afin de modularisé au plus possible (ex: ici nous avons un groupe web_servers)
+└── webservers.yml          <-- Il faut mieux créer un playbook par groupe afin de modularisé au plus possible (ex: ici nous avons un groupe web_servers)
 ```
