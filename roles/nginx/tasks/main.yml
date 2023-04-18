@@ -11,6 +11,13 @@
     src: default.j2
     dest: /etc/nginx/sites-available/default
     mode: "0744"
+
+- name: "NGINX | Fichier"
+  become: true
+  ansible.builtin.template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    mode: "0744"
   notify: "NGINX | Restart"
 ...
 
