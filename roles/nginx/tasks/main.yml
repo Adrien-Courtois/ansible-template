@@ -1,0 +1,8 @@
+---
+- name: "NGINX | Installation"
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+...
+
+# tasks file for nginx
