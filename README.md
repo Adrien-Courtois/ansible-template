@@ -33,5 +33,5 @@ Ce repo est un exemple d'arborescence de projet Ansible.
 │       ├── tests/          <-- Dossier contenant un inventaire et un playbook afin d'avoir un environnement de tests pour le rôle
 │       └── vars/           <-- Variable associés au rôle
 │ 
-└── web_servers.yml         <-- Il créer un playbook par groupe afin de modularisé au plus possible
+└── web_servers.yml         <-- Il faut mieux créer un playbook par groupe afin de modularisé au plus possible
 ```
