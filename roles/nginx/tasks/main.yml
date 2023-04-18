@@ -1,5 +1,6 @@
 ---
 - name: "NGINX | Installation"
+  become: true
   ansible.builtin.apt:
     name: nginx
     state: present
