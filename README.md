@@ -12,7 +12,7 @@ Liste des fichiers
 ├── inventory/              <-- Dossier contenant plusieurs inventaires pour différencier les environnements
 │   ├── production.yml      <-- Inventaires en production
 │   └── staging.yml         <-- Inventaires en test
-├── main.yml                <-- Playbook principale faisant appel aux autres playbooks
+├── site.yml                <-- Playbook principale faisant appel aux autres playbooks
 ├── roles/                  <-- Dossier contenant tout les rôles
 │   └── nginx/              <-- Exemples de rôle appelé nginx (ex: ce rôle pourrait installer un serveur nginx)
 │       ├── defaults/       
