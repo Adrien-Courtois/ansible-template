@@ -10,7 +10,9 @@ Ce repo est un exemple d'arborescence de projet Ansible.
 ├── host_vars/              <-- Variables par host
 │ 
 ├── inventory/              <-- Dossier contenant plusieurs inventaires pour différencier les environnements
+│   │
 │   ├── production.yml      <-- Inventaires en production
+│   │
 │   └── staging.yml         <-- Inventaires en test
 │ 
 ├── main.yml                <-- Playbook principale faisant appel aux autres playbooks
@@ -18,21 +20,27 @@ Ce repo est un exemple d'arborescence de projet Ansible.
 ├── README.md               
 │ 
 ├── roles/                  <-- Dossier contenant tout les rôles
+│   │
 │   └── nginx/              <-- Exemples de rôle
+│       │
 │       ├── defaults/       
+│       │   |
 │       │   └── main.yml    <-- Fichier contenant les variables par défauts du rôle
 │       │
 │       ├── files/          <-- Dossier contenant des fichiers qui ne seront pas modifiés (ex: avec le module copy)
 │       │
 │       ├── handlers/        
+│       │   |
 │       │   └── main.yml    <-- Fichier qui contient les tâches pouvant être appelé grâce au module 'notify'
 │       │
 │       ├── meta/
+│       │   |
 │       │   └── main.yml    <-- Meta description du rôle
 │       │
 │       ├── README.md
 │       │
 │       ├── tasks/          
+│       │   |
 │       │   └── main.yml    <-- Fichier contenant les tâches exécutées pour ce rôle
 │       │
 │       ├── templates/      <-- Dossier contenant des templates qui seront modifiés (template jinja2 avec extension .j2 pour)
