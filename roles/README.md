@@ -7,7 +7,6 @@ Pour installer un role il faut
 - src: https://github.com/Adrien-Courtois/NOM_REPO
   version: BRANCHE
   name: NOM_DONNER_AU_ROLE
-
 ```
 
 - Exécuter la commande
